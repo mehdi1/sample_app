@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html>
+
+ <html> 
+
 <head>
 	<title>Simple App du Tutoriel Ruby on Rails | <%= @titre %></title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+	<%= stylesheet_link_tag 'address', :media => 'screen' %>
+	<%= stylesheet_link_tag 'bootstrap', :media => 'screen' %>
+	<%= stylesheet_link_tag 'bootstrap-editable', :media => 'screen' %>
+	<%= stylesheet_link_tag 'bootstrap-responsive', :media => 'screen' %>
+	<%= stylesheet_link_tag 'bootstrap-wysihtml5-0.0.2', :media => 'screen' %>
+	<%= stylesheet_link_tag 'datetimepicker', :media => 'screen' %>
+	<%= stylesheet_link_tag 'select2', :media => 'screen' %>
+	<%= stylesheet_link_tag 'select2-bootstrap', :media => 'screen' %>
+	<%= stylesheet_link_tag 'x-editable-perso', :media => 'screen' %>
+	<%= stylesheet_link_tag 'bootstrap', :media => 'screen' %>
+	<%= stylesheet_link_tag 'bootstrap-col', :media => 'screen' %>
+	<%= stylesheet_link_tag 'bootstrap-responsive', :media => 'screen' %>
+	<%= stylesheet_link_tag 'datepicker', :media => 'screen' %>
+	<%= stylesheet_link_tag 'responsive-tabs', :media => 'screen' %>
+	<%= stylesheet_link_tag 'style', :media => 'screen' %>
+	<%= stylesheet_link_tag 'unseen', :media => 'screen' %>
+	
 </head>
-<body>
-
+ <body>
+ 
 <%= yield %>
 
-</body>
+ </body> 
 </html>
