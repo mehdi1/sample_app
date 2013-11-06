@@ -1,0 +1,570 @@
+<h1>Pages#salaries</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap, from LayoutIt!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append â€˜#!watchâ€™ to the browser URL, then refresh the page. -->
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/responsive-tabs.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-col.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/datepicker.css" />
+	<link href="css/bootstrap-responsive.css" rel="stylesheet"> 
+	
+	
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+  
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script src="js/responsiveTabs.js"></script>
+	
+	
+	
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]--> 
+       
+<title>Simple App du Tutoriel Ruby on Rails | <%= @titre %> </title>
+
+   
+</head>
+
+<body>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1>
+					Cr&eacute;ation salari&eacute;  <br /><small>Bootstrap  / grid-responsive / tab-responsive</small>
+				</h1>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row-fluid">
+		<div class="span12">
+			<a href="fiche-salarier.html" class="btn btn-success" style="float:right" type="button">Sauvegarder</a>
+		</div>
+	</div>
+	
+	<div class="row-fluid">
+		
+	     <div class="span12">
+		<div class="responsive-tabs">
+
+			<h2>Donn&eacute;es personelles</h2>
+			<div>
+				<div class="row span12">
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Matricule</label><input type="text" class="span7" id="input01" style="float:left" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Nom</label><input type="text" class="span7" id="input01" style="float:left" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Nom jeune fille</label><input type="text" class="span7" id="input01" style="float:left" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Prenom</label><input type="text" class="span7" id="input01" style="float:left" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>titre</label>
+									<div class="controls span7" style="float:left">
+										<select id="select01" class="select-with span12">
+												<option value="AK" />Monsieur
+												<option value="HI" />Madame
+												 <option value="HI" />Mademoiselle
+										</select>
+									</div>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Sexe</label>
+									<div class="controls span7" style="float:left">
+										<select id="select01" class="with-search span12">
+											<option value="M" />Homme
+											<option value="F" />Femme
+										</select>
+									</div>
+							</div>
+				</div>
+			</div>
+
+			<h2>&Eacute;tat civil</h2>
+			
+				<div>
+					<div class="row span12">
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>N&deg; SEC SOC</label><input type="text"  class="span7" id="input01" style="float:left" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Date de naissance</label><input type="text" class="span7" id="date-masked"  />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Lieu de naissance</label><input type="text" class="span7"  id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Nationalit&eacute;</label>
+									<div class="controls span7"  style="float:left">
+										<select name="country" class="span12" id="country">
+											<option value=""></option>
+											<option value="AR">Argentina</option>
+											<option value="AU">Australia</option>
+											<option value="AT">Austria</option>
+											<option value="BY">Belarus</option>
+											<option value="BE">Belgium</option>
+											<option value="BA">Bosnia and Herzegovina</option>
+											<option value="BR">Brazil</option>
+											<option value="BG">Bulgaria</option>
+											<option value="CA">Canada</option>
+											<option value="CL">Chile</option>
+											<option value="CN">China</option>
+											<option value="CO">Colombia</option>
+											<option value="CR">Costa Rica</option>
+											<option value="HR">Croatia</option>
+											<option value="CU">Cuba</option>
+											<option value="CY">Cyprus</option>
+											<option value="CZ">Czech Republic</option>
+											<option value="DK">Denmark</option>
+											<option value="DO">Dominican Republic</option>
+											<option value="EG">Egypt</option>
+											<option value="EE">Estonia</option>
+											<option value="FI">Finland</option>
+											<option value="FR">France</option>
+											<option value="GE">Georgia</option>
+											<option value="DE">Germany</option>
+											<option value="GI">Gibraltar</option>
+											<option value="GR">Greece</option>
+											<option value="HK">Hong Kong S.A.R., China</option>
+											<option value="HU">Hungary</option>
+											<option value="IS">Iceland</option>
+											<option value="IN">India</option>
+											<option value="ID">Indonesia</option>
+											<option value="IR">Iran</option>
+											<option value="IQ">Iraq</option>
+											<option value="IE">Ireland</option>
+											<option value="IL">Israel</option>
+											<option value="IT">Italy</option>
+											<option value="JM">Jamaica</option>
+											<option value="JP">Japan</option>
+											<option value="KZ">Kazakhstan</option>
+											<option value="KW">Kuwait</option>
+											<option value="KG">Kyrgyzstan</option>
+											<option value="LA">Laos</option>
+											<option value="LV">Latvia</option>
+											<option value="LB">Lebanon</option>
+											<option value="LT">Lithuania</option>
+											<option value="LU">Luxembourg</option>
+											<option value="MK">Macedonia</option>
+											<option value="MY">Malaysia</option>
+											<option value="MT">Malta</option>
+											<option value="MX">Mexico</option>
+											<option value="MD">Moldova</option>
+											<option value="MC">Monaco</option>
+											<option value="ME">Montenegro</option>
+											<option value="MA">Morocco</option>
+											<option value="NL">Netherlands</option>
+											<option value="NZ">New Zealand</option>
+											<option value="NI">Nicaragua</option>
+											<option value="KP">North Korea</option>
+											<option value="NO">Norway</option>
+											<option value="PK">Pakistan</option>
+											<option value="PS">Palestinian Territory</option>
+											<option value="PE">Peru</option>
+											<option value="PH">Philippines</option>
+											<option value="PL">Poland</option>
+											<option value="PT">Portugal</option>
+											<option value="PR">Puerto Rico</option>
+											<option value="QA">Qatar</option>
+											<option value="RO">Romania</option>
+											<option value="RU">Russia</option>
+											<option value="SA">Saudi Arabia</option>
+											<option value="RS">Serbia</option>
+											<option value="SG">Singapore</option>
+											<option value="SK">Slovakia</option>
+											<option value="SI">Slovenia</option>
+											<option value="ZA">South Africa</option>
+											<option value="KR">South Korea</option>
+											<option value="ES">Spain</option>
+											<option value="LK">Sri Lanka</option>
+											<option value="SE">Sweden</option>
+											<option value="CH">Switzerland</option>
+											<option value="TW">Taiwan</option>
+											<option value="TH">Thailand</option>
+											<option value="TN">Tunisia</option>
+											<option value="TR">Turkey</option>
+											<option value="UA">Ukraine</option>
+											<option value="AE">United Arab Emirates</option>
+											<option value="GB">United Kingdom</option>
+											<option value="US">USA</option>
+											<option value="UZ">Uzbekistan</option>
+											<option value="VN">Vietnam</option>
+										</select>
+								</div>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Situation</label>
+									<div class="controls span7" style="float:left">
+										<select id="select01" class="span12"  >
+											<option value="AK" />1-Celib
+											<option value="HI" />0-Marier 
+											<option value="EI" />2-Veuf
+											<option value="CK" />3-Divorc&eacute;
+											<option value="DK" />4-Autre
+										</select>
+									</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Nombre enfant</label><input type="text"  class="span7" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Adresse</label><input type="text" class="span7" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Code Postal</label><input type="text"  class="span7" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Pays</label><input type="text" class="span7" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Email</label><input type="text" class="span7" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>T&eacute;l&eacute;phone</label><input type="text" class="phone-masked span7" id="phone-masked" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label class="control-label" for="fileInput" style="float: left;">T&eacute;l&eacute;echarger une image</label>
+									<div id="uniform-fileInput" class="uploader"><input id="fileInput" class="file" type="file"></input></div>
+							</div>
+							<div class="row-fluid">
+								<div class="span12">
+									<div class="col-xs-12 col-sm-12 col-lg-12" id="user">
+										<label>Commentaire</label>
+										<textarea class="span12" id="textarea" rows="2"></textarea>
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			<h2>Affectation</h2>
+				<div>
+					<div class="row span12">
+						
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>N&deg; d'&eacute;tablissement</label><input type="text" class="span7" style="float:left" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Lieu travail</label><div class="controls span7" style="float:left">
+																	<select id="select01" class="span12">
+																	<option value="AK" />France
+																	<option value="AK" />Frontalier
+																	<option value="HI" />Etranger
+																										                
+																	</select>
+																</div>
+																
+							</div>
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Qualification</label><input type="text" class="span7" style="float:left" id="input01" />
+							</div>
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Emploie</label><div class="controls span7" style="float:">
+																	<select id="select01" class="span12">
+																		<option value="AK" />menuisier
+																		<option value="HI" />peintre
+													                
+																	</select>
+																</div>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Categorie</label><div class="controls span7" style="float:left">
+																	<select id="select01" class="span12">
+																		<option value="AK" />Dirigeant
+																		<option value="HI" />Cadre
+																		<option value="AK" />Apprenti
+																		<option value="HI" />Autre
+																	</select>
+																</div>
+							</div>
+							
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Echelon</label><input type="text" class="span7" style="float:left" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Coefficient</label><input type="text" class="span7" style="float:left" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Secteur</label><input type="text" class="span7" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Groupe</label><input type="text" class="span7" style="float:left" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Date debut</label>
+									<div class="controls span7" style="float:left">
+										<div class="input-append date" class="span12" id="datepicker-js" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+											<input class="datepicker-input" size="16" type="text" value="12-02-2012" placeholder="Select a date" />
+												<span class="add-on"><i class="cus-calendar-2"></i></span>
+										</div>
+									</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Date de sortie</label>
+								<div class="controls span7" style="float:left">
+									<div class="input-append date" class="span12" id="datepicker-js" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+										<input class="datepicker-input" size="16" type="text" value="12-02-2012" placeholder="Select a date" />
+											<span class="add-on"><i class="cus-calendar-2"></i></span>
+									</div>
+								</div>
+							</div>
+							
+							
+							
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Motif</label>
+								<div class="controls span7" style="float:left">
+									<select id="select01" class="span12"  >
+										<option value="AK" />
+										<option value="HI" />
+											</select>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Date fin</label>	
+								<div class="controls span7" style="float:left">
+									<div class="input-append date" class="span12" id="datepicker-js" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+										<input class="datepicker-input" size="16" type="text" value="12-02-2012" placeholder="Select a date" />
+											<span class="add-on"><i class="cus-calendar-2"></i></span>
+									</div>
+								</div>
+								
+							</div>
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Anciennete</label><div class="controls span7" style="float:left">
+									<div class="input-append date" class="span7" id="datepicker-js" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+										<input class="datepicker-input" size="16" type="text" value="12-02-2012" placeholder="Select a date" />
+											<span class="add-on"><i class="cus-calendar-2"></i></span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Groupe</label><input type="text" class="span7" style="float:left" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Date et heure embauche</label>
+								<div class="controls" >
+									<div class="input-append date"  style="float:left" id="datepicker-js" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+										<input class="datepicker-input" size="16" type="text" value="12-02-2012" placeholder="Select a date" />
+											<span class="add-on"><i class="cus-calendar-2" ></i></span>
+									</div>
+									<div class="input-append bootstrap-timepicker-component" >
+									            <input id="timepicker2" type="text" class="timepicker-input" value="Heure embauche" style="width: 116px"/>
+									</div>
+								</div>
+							</div>	
+					</div>
+				</div>
+			
+			<h2>Bulletin</h2>
+				<div>
+					<div class="row span12">
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Type de pays</label>
+								<select id="select01" class="span7">
+									<option value="M" />Mensuel
+									 <option value="F" />Horaire
+									<option value="F" />Par point
+									<option value="F" />Partiel
+									<option value="F" />Autre
+													                
+								</select>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Salaire de base</label><input type="text" class="span7" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Montant percu</label><input type="text" class="span7" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Employeur(s)</label>
+								<select id="select01" class="span7">
+									<option value="F" />
+									 <option value="M" />Employeur unique
+									<option value="F" />Employeur multiple
+									<option value="F" />Situation non reconnu
+								</select>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Emploi(s)</label>
+								<select id="select01" class="span7">
+									<option value="AK" />
+									<option value="M" />Situation non reconnu
+									<option value="F" />Emplois unique
+									<option value="F" />Emplois multiples
+								</select>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Nature contrat</label>
+								<select id="select01" class="span7">
+									<option value="AK" />
+									<option value="AK" />contat a duree indeterminee
+									<option value="HI" />contrat a duree determinee
+								</select>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Duree du travail contractuelle</label><input type="text" class="span7" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Intitulabbe contrat</label>
+								<select id="select01" class="span7"> 
+									<option value="AK" />df
+									<option value="AK" />contat a duree indeterminee
+									<option value="HI" />contrat a duree determinee
+								</select>
+							</div>
+					</div>
+				</div>
+			
+			<h2>DADS</h2>
+				<div>
+					<div class="row span12">
+						
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Convetion collective</label><input type="text" class="span7" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Code convetion collective</label><input type="text" class="span7" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Avantages nourriture</label>
+								<select id="select01" class="span7">
+									<option value="M" />oui
+									<option value="F" />non
+								</select>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Avantages logement</label>
+								<select id="select01" class="span7">
+									<option value="M" />oui
+									<option value="F" />non
+								</select>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Avantages vehicule</label>
+								<select id="select01" class="span7">
+									<option value="M" />oui
+									<option value="F" />non
+								</select>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Avantages autre</label>
+								<select id="select01" class="span7">
+									<option value="M" />oui
+									<option value="F" />non
+								</select>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Frais forfait</label>
+								<select id="select01" class="span7">
+									<option value="M" />oui
+									<option value="F" />non
+								</select>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Frais remboursement</label><input type="text" class="span7" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Frais avantage salarie</label><input type="text" class="span7" id="input01" />
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Pourboire</label>
+								<select id="select01" class="span7">
+									<option value="M" />oui
+									<option value="F" />non
+								</select>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-lg-4" id="user">
+								<label>Absence montant</label><input type="text" class="span7" id="input01" />
+							</div>
+							
+					</div>
+				</div>
+							
+		</div>
+	       </div>
+	</div>
+</div>
+ 
+               
+
+		<script>
+		$(document).ready(function() {
+			RESPONSIVEUI.responsiveTabs();
+		})
+		</script>	
+
+</body>
+</html>
+

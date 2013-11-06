@@ -1,0 +1,1293 @@
+<h1>Pages#contact</h1>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <title>{JARVIS}Fiche salarier</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    
+	<!-- http://davidbcalhoun.com/2010/viewport-metatag -->
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<!--// OPTIONAL & CONDITIONAL CSS FILES //-->   
+	<!-- date picker css -->
+	<link rel="stylesheet" href="css/datepicker.css?v=1" />
+	<!-- full calander css -->
+	<link rel="stylesheet" href="css/fullcalendar.css?v=1" />
+	<!-- data tables extended CSS -->
+	<link rel="stylesheet" href="css/TableTools.css?v=1" />
+	<!-- bootstrap wysimhtml5 editor -->
+	<link rel="stylesheet" href="css/bootstrap-wysihtml5.css?v=1" />
+	<link rel="stylesheet" href="css/wysiwyg-color.css" />
+	<!-- custom/responsive growl messages -->
+	<link rel="stylesheet" href="css/toastr.custom.css?v=1" />
+	<link rel="stylesheet" href="css/toastr-responsive.css?v=1" />
+	<link rel="stylesheet" href="css/jquery.jgrowl.css?v=1" />
+	
+	<!-- // DO NOT REMOVE OR CHANGE ORDER OF THE FOLLOWING // -->
+	<!-- bootstrap default css (DO NOT REMOVE) -->
+	<link rel="stylesheet" href="css/bootstrap.min.css?v=1" />
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css?v=1" />
+	<!-- font awsome and custom icons -->
+	<link rel="stylesheet" href="css/font-awesome.min.css?v=1" />
+	<link rel="stylesheet" href="css/cus-icons.css?v=1" />
+	<!-- jarvis widget css -->
+	<link rel="stylesheet" href="css/jarvis-widgets.css?v=1" />
+	<!-- Data tables, normal tables and responsive tables css -->
+	<link rel="stylesheet" href="css/DT_bootstrap.css?v=1" />
+	<link rel="stylesheet" href="css/responsive-tables.css?v=1" />
+	<!-- used where radio, select and form elements are used -->
+	<link rel="stylesheet" href="css/uniform.default.css?v=1" />
+	<link rel="stylesheet" href="css/select2.css?v=1" />
+	<!-- main theme files -->
+	<link rel="stylesheet" href="css/theme.css?v=1" />
+	<link rel="stylesheet" href="css/theme-responsive.css?v=1" />
+	<!-- css perso -->
+	
+	<!-- // THEME CSS changed by javascript: the CSS link below will override the rules above // -->
+	<!-- For more information, please see the documentation for "THEMES" -->
+    <link rel="stylesheet" id="switch-theme-js" href="css/themes/default.css?v=1" />   
+   	<!-- To switch to full width -->
+    <link rel="stylesheet" id="switch-width" href="css/full-width.css?v=1" />
+    
+	<!-- Webfonts -->
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:300,400,700' type='text/css' />
+	
+	<!-- All javascripts are located at the bottom except for HTML5 Shim -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+   		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+   		<script src="js/include/respond.min.js"></script>
+   	<![endif]-->
+	
+	<!-- For Modern Browsers -->
+	<link rel="shortcut icon" href="img/favicons/favicon.png" />
+	<!-- For everything else -->
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" />
+	<!-- For retina screens -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/apple-touch-icon-retina.png" />
+	<!-- For iPad 1-->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/apple-touch-icon-ipad.png" />
+	<!-- For iPhone 3G, iPod Touch and Android -->
+	<link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon.png" />
+	
+	<!-- iOS web-app metas -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	<!-- Startup image for web apps -->
+	<link rel="apple-touch-startup-image" href="img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
+	<link rel="apple-touch-startup-image" href="img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+	<link rel="apple-touch-startup-image" href="img/splash/iphone.png" media="screen and (max-device-width: 320px)" />
+	
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  
+  <script src="js/js-xeditable-bootstrap/jquery-1.9.1.min.js"></script>  
+        <script src="js/js-xeditable-bootstrap/jquery.mockjax.js"></script>
+        
+        <!-- momentjs --> 
+        <script src="js/js-xeditable-bootstrap/moment.min.js"></script> 
+        
+        <!-- select2 --> 
+        <link href="css/css-xeditable-bootstrap/select2.css" rel="stylesheet">
+        <script src="js/js-xeditable-bootstrap/select2.js"></script>         
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]--> 
+        
+            
+        <!-- bootstrap -->
+        <!--<link href="css/css-xeditable-bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="css/css-xeditable-bootstrap/bootstrap-responsive.css" rel="stylesheet">-->  
+        <script src="js/js-xeditable-bootstrap/bootstrap.js"></script>
+
+        <!-- bootstrap-datetimepicker -->
+        <link href="css/css-xeditable-bootstrap/datetimepicker.css" rel="stylesheet">
+        <script src="js/js-xeditable-bootstrap/bootstrap-datetimepicker.js"></script>        
+        
+        <!-- x-editable (bootstrap) -->
+        <link href="css/css-xeditable-bootstrap/bootstrap-editable.css" rel="stylesheet">
+        <script src="js/js-xeditable-bootstrap/bootstrap-editable.js"></script>
+
+        <!-- wysihtml5 -->
+        <link href="css/css-xeditable-bootstrap/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet">  
+        <script src="js/js-xeditable-bootstrap/wysihtml5-0.3.0.min.js"></script>  
+        <script src="js/js-xeditable-bootstrap/bootstrap-wysihtml5-0.0.2.min.js"></script>
+        <script src="js/js-xeditable-bootstrap/wysihtml5.js"></script>
+        
+        <!-- select2 bootstrap -->
+        <link href="css/css-xeditable-bootstrap/select2-bootstrap.css" rel="stylesheet">
+        
+        
+        
+        <script>
+        var f = 'bootstrap2';
+        </script>
+
+        
+        <!-- address input -->
+        <link href="css/css-xeditable-bootstrap/address.css" rel="stylesheet">
+        <script src="js/js-xeditable-bootstrap/address.js"></script> 
+        
+        
+                
+
+  
+  <link href="css/css-xeditable-bootstrap/x-editable-perso.css" rel="stylesheet">
+	
+
+<title>Simple App du Tutoriel Ruby on Rails | <%= @titre %></title>  
+  
+  </head>
+
+  <body>
+  	<!-- .height-wrapper -->
+	<div class="height-wrapper">
+		
+		<!-- header -->
+		<header>
+			<!-- tool bar -->
+			<div id="header-toolbar" class="container-fluid">
+			
+			
+				<!-- .contained -->
+				<div class="contained">
+					
+					<!-- theme name -->
+					<h1> {JARVIS} <span class="hidden-phone">- Fiche salarier</span> </h1>
+					<!-- end theme name -->
+					
+					
+							
+						
+				</div>
+				<!-- end .contained -->
+			</div>
+			<!-- end tool bar -->
+			
+		</header>
+		<!-- end header -->
+		
+	    <div id="main" role="main" class="container-fluid">
+			<div class="contained">
+				<!-- aside -->	
+				<aside>	
+					<!-- aside item: Menu -->
+					<div class="sidebar-nav-fixed">
+						
+						<ul class="menu" id="accordion-menu-js">
+							<li class="current">
+								<a href="javascript:void(0)"><i class="icon-off"></i>Dashboard <span class="badge">2</span></a>
+								<ul>
+									<li>
+										<a href="index.html" class="expanded">Dashboard</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="logout-js" data-rel="login.html">Logout</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="inbox.html"><i class="icon-envelope"></i>Inbox</a>
+							</li>
+							<li class="">
+								<a href="javascript:void(0)"><i class="icon-check"></i>Forms<span class="badge">3</span></a>
+								<ul>
+									<li>
+										<a href="forms.html">Form Elements</a>
+									</li>
+									<li>
+										<a href="validation.html">Validation</a>
+									</li>
+									<li>
+										<a href="wizard.html">Wizards</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="javascript:void(0)"><i class="icon-user"></i>Interface<span class="badge">3</span></a>
+								<ul>
+									<li>
+										<a href="interface.html">Interface Elements</a>
+									</li>
+									<li>
+										<a href="buttons.html">Buttons &amp; Icons</a>
+									</li>
+									<li>
+										<a href="tables.html">Tables</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="javascript:void(0)"><i class="icon-signal"></i>Charts &amp; Graphs<span class="badge">2</span></a>
+								<ul>
+									<li>
+										<a href="basic_charts.html">Basic Charts</a>
+									</li>
+									<li>
+										<a href="adv_charts.html">Advanced Charts</a>
+									</li>
+								</ul>
+							</li>
+							<li class="">
+								<a href="widgets.html"><i class="icon-refresh"></i>Smart Widgets</a>
+							</li>
+							<li class="">
+								<a href="javascript:void(0)"><i class="icon-plus"></i>Bonus<span class="badge">3</span></a>
+								<ul>
+									<li>
+										<a href="invoice.html">Invoice</a>
+									</li>
+									<li>
+										<a href="typography.html">Typography</a>
+									</li>
+									<li>
+										<a href="chat.html">Chat</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						
+					</div>
+					
+				</aside>
+				<!-- aside end -->
+				
+				<!-- main content -->
+				<div id="page-content">
+					<!-- page header -->
+					
+					
+					<h2>FICHE : salarier</h2>
+					
+						
+				 <div class="fluid-container">
+						
+						<!-- widget grid -->
+						<section id="widget-grid" class="">	<!-- end row-fluid -->	
+					
+					<div class="row-fluid">
+								
+								<article class="span12">
+									<!-- new widget -->
+									<div class="jarviswidget" id="widget-id-2">
+									    <header>
+									        <h2>&Eacute;diter un salarier</h2>                           
+									    </header>
+									    
+									    <!-- widget div-->
+									    <div>
+									    	<!-- widget edit box -->
+									        <div class="jarviswidget-editbox">
+									            <div>
+									                <label>Title:</label>
+									                <input type="text" />
+									            </div>
+									            <div>
+									                <label>Styles:</label>
+									                <span data-widget-setstyle="purple" class="purple-btn"></span>
+									                <span data-widget-setstyle="navyblue" class="navyblue-btn"></span>
+									                <span data-widget-setstyle="green" class="green-btn"></span>
+									                <span data-widget-setstyle="yellow" class="yellow-btn"></span>
+									                <span data-widget-setstyle="orange" class="orange-btn"></span>
+									                <span data-widget-setstyle="pink" class="pink-btn"></span>
+									                <span data-widget-setstyle="red" class="red-btn"></span>
+									                <span data-widget-setstyle="darkgrey" class="darkgrey-btn"></span>
+									                <span data-widget-setstyle="black" class="black-btn"></span>
+									            </div>
+									        </div>
+									        <!-- end widget edit box -->
+            
+									        <div class="inner-spacer widget-content-padding"> 
+									        <!-- content -->	
+												<ul id="myTab" class="nav nav-tabs default-tabs">
+													<li class="active">
+														<a href="#s1" data-toggle="tab">Donn&eacute;es personelles</a>
+													</li>
+													<li>
+														<a href="#s2" data-toggle="tab">&Eacute;tat civil</a>
+													</li>
+													<li>
+														<a href="#s3" data-toggle="tab">Affectation</a>
+													</li>
+													
+													<li>
+														<a href="#s4" data-toggle="tab">Salaire</a>
+													</li>
+													<!--<li>
+														<a href="#s5" data-toggle="tab">Cong&eacute;</a>
+													</li>	-->
+													<li>
+														<a href="#s6" data-toggle="tab">Bulletin</a>
+													</li>
+													<li>
+														<a href="#s7" data-toggle="tab">DADS</a>
+													</li>
+													
+												</ul>
+										<div id="myTabContent" class="tab-content">
+											<div class="tab-pane fade in active" id="s1">
+												<form class="form-horizontal themed" />
+													<fieldset>
+														<div class="control-group" >
+															<label class="control-label" for="input01">Matricule</label>
+															<div class="controls">
+																<a href="#" id="matricule" data-type="text" data-pk="1"data-placement="right" data-original-title="Enter username">MD001</a>
+															</div>
+														</div>
+														
+														
+														<div class="control-group">
+															<label class="control-label" for="input01">Nom</label>
+															<div class="controls">
+																<a href="#" id="nom" data-type="text" data-pk="1" data-placement="right" data-placeholder="donn&eacute;es obligatoires" data-original-title="Entrer le nom du salari&eacute;"></a>
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="input01">Nom de jeune fille</label>
+															<div class="controls">
+																<a href="#" id="nomjeunefille" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-original-title="Entrer le nom de jeune fille"></a>
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="input01">Prenom</label>
+															<div class="controls">
+																<a href="#" id="prenom" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-original-title="Entrer le prenom du salari&eacute;"></a>
+															</div>
+														</div>
+														
+														<div class="control-group">
+															<label class="control-label" for="select01">Sexe</label>
+															<div class="controls">
+																<a href="#" id="sex" data-type="select" data-pk="1" data-value="" data-original-title="Select sex"></a>
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="select01">Titre</label>
+															<div class="controls">
+																<a href="#" id="titre" data-type="select" data-pk="1" data-value="" data-original-title="Select titre"></a>
+															</div>
+
+														</div>
+														
+													
+													</fieldset>
+												</form>
+											</div>
+											
+										
+										
+													
+											<div class="tab-pane fade" id="s2">
+												<form class="form-horizontal themed" />
+													<fieldset>
+														<div class="control-group">
+															<label class="control-label" for="date-masked">Date de naissance</label>
+															<div class="controls">
+																<a href="#" id="vacation" data-type="date" data-viewformat="dd.mm.yyyy" data-pk="1" data-placement="right" data-original-title="When you want vacation to start?">25.02.2013</a> 
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="input01">Lieu de naissance</label>
+															<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="input01">N&deg; SEC SOC</label>
+															<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+													
+													
+														
+														<div class="control-group">
+															<label class="control-label" for="select01">Pays de nationalit&eacute</label>
+															<div class="controls">
+																<select name="country" id="country">
+																			<option value=""></option>
+<option value="AR">Argentina</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+<option value="BY">Belarus</option>
+<option value="BE">Belgium</option>
+<option value="BA">Bosnia and Herzegovina</option>
+<option value="BR">Brazil</option>
+<option value="BG">Bulgaria</option>
+<option value="CA">Canada</option>
+<option value="CL">Chile</option>
+<option value="CN">China</option>
+<option value="CO">Colombia</option>
+<option value="CR">Costa Rica</option>
+<option value="HR">Croatia</option>
+<option value="CU">Cuba</option>
+<option value="CY">Cyprus</option>
+<option value="CZ">Czech Republic</option>
+<option value="DK">Denmark</option>
+<option value="DO">Dominican Republic</option>
+<option value="EG">Egypt</option>
+<option value="EE">Estonia</option>
+<option value="FI">Finland</option>
+<option value="FR">France</option>
+<option value="GE">Georgia</option>
+<option value="DE">Germany</option>
+<option value="GI">Gibraltar</option>
+<option value="GR">Greece</option>
+<option value="HK">Hong Kong S.A.R., China</option>
+<option value="HU">Hungary</option>
+<option value="IS">Iceland</option>
+<option value="IN">India</option>
+<option value="ID">Indonesia</option>
+<option value="IR">Iran</option>
+<option value="IQ">Iraq</option>
+<option value="IE">Ireland</option>
+<option value="IL">Israel</option>
+<option value="IT">Italy</option>
+<option value="JM">Jamaica</option>
+<option value="JP">Japan</option>
+<option value="KZ">Kazakhstan</option>
+<option value="KW">Kuwait</option>
+<option value="KG">Kyrgyzstan</option>
+<option value="LA">Laos</option>
+<option value="LV">Latvia</option>
+<option value="LB">Lebanon</option>
+<option value="LT">Lithuania</option>
+<option value="LU">Luxembourg</option>
+<option value="MK">Macedonia</option>
+<option value="MY">Malaysia</option>
+<option value="MT">Malta</option>
+<option value="MX">Mexico</option>
+<option value="MD">Moldova</option>
+<option value="MC">Monaco</option>
+<option value="ME">Montenegro</option>
+<option value="MA">Morocco</option>
+<option value="NL">Netherlands</option>
+<option value="NZ">New Zealand</option>
+<option value="NI">Nicaragua</option>
+<option value="KP">North Korea</option>
+<option value="NO">Norway</option>
+<option value="PK">Pakistan</option>
+<option value="PS">Palestinian Territory</option>
+<option value="PE">Peru</option>
+<option value="PH">Philippines</option>
+<option value="PL">Poland</option>
+<option value="PT">Portugal</option>
+<option value="PR">Puerto Rico</option>
+<option value="QA">Qatar</option>
+<option value="RO">Romania</option>
+<option value="RU">Russia</option>
+<option value="SA">Saudi Arabia</option>
+<option value="RS">Serbia</option>
+<option value="SG">Singapore</option>
+<option value="SK">Slovakia</option>
+<option value="SI">Slovenia</option>
+<option value="ZA">South Africa</option>
+<option value="KR">South Korea</option>
+<option value="ES">Spain</option>
+<option value="LK">Sri Lanka</option>
+<option value="SE">Sweden</option>
+<option value="CH">Switzerland</option>
+<option value="TW">Taiwan</option>
+<option value="TH">Thailand</option>
+<option value="TN">Tunisia</option>
+<option value="TR">Turkey</option>
+<option value="UA">Ukraine</option>
+<option value="AE">United Arab Emirates</option>
+<option value="GB">United Kingdom</option>
+<option value="US">USA</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VN">Vietnam</option>
+</select>		
+															</div>
+														</div>
+												
+														<div class="control-group"> 
+																													
+															<label class="control-label" for="select01" >Situation familliale</label>
+																<div class="controls">
+																	<select id="select01" class="span12 with-search">
+																		<option value="AK" />1-Celib
+																		<option value="HI" />0-Marier 
+																		<option value="EI" />2-Veuf
+																		<option value="CK" />3-Divorc&eacute;
+																		<option value="DK" />4-Autre
+													                
+																	</select>
+																</div>
+														</div>
+														<div class="control-group"> 
+															<label class="control-label" for="input01" >Nombre enfant</label>
+																<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+															
+														<div class="control-group">
+																<label class="control-label" for="textarea">Adresse</label>
+																<div class="controls">
+																	<textarea class="span12" id="textarea" rows="3"></textarea>
+																</div>
+														</div>
+														<div class="control-group"> 
+															<label class="control-label" for="input01" >Code Postal</label>
+																<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														<div class="control-group"> 
+															<label class="control-label" for="input01" >Ville</label>
+																<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														
+														<div class="control-group"> 
+															<label class="control-label" for="input01" >Pays</label>
+																<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														
+														<div class="control-group">
+															<label class="control-label" for="phone-masked">T&eacute;l&eacute;phone</label>
+															<div class="controls">
+																<input type="text" class="span12 phone-masked" id="phone-masked" />
+																	
+															</div>
+														</div>
+														<div class="control-group"> 
+															<label class="control-label" for="input01" >Email</label>
+																<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														<div class="control-group">
+																<label class="control-label" for="textarea">Commentaire</label>
+																<div class="controls">
+																	<textarea class="span12" id="textarea" rows="3"></textarea>
+																</div>
+														</div>
+														<div class="control-group">
+
+																		<label class="control-label" for="fileInput">
+
+																						T&eacute;l&eacute;echarger une image
+
+																		</label>
+																	<div class="controls">
+																		<div id="uniform-fileInput" class="uploader">
+																			<input id="fileInput" class="file" type="file"></input>
+																				<span class="filename" style="-moz-user-select: none;">
+
+																					Choisissez une image 
+
+																				</span>
+																				<span class="file-action btn btn-success" style="-moz-user-select: none;">
+																					<i class="icon-plus"></i>
+																				</span>
+																		</div>
+																		<div class="space"></div>
+																				<input id="fileInput2" class="file-no-style" type="file"></input>
+																		</div>
+
+																</div>
+													
+													</fieldset>
+												</form>
+											</div>
+											<div class="tab-pane fade" id="s3">
+												<form class="form-horizontal themed" />
+													<fieldset>
+														<div class="control-group"> 
+															<label class="control-label" for="input01" >Numero d'&eacute;tablissement</label>
+																<div class="controls">
+																<input type="text" class="span12" id="input01" />
+																</div>
+															
+														</div>
+														
+														<div class="control-group">
+															<label class="control-label" for="select01" >Lieu de travail different</label>
+																<div class="controls">
+																	<select id="select01" class="span12">
+																	<option value="AK" />France
+																	<option value="AK" />Frontalier
+																	<option value="HI" />Etranger
+																										                
+																	</select>
+																</div>
+																
+														</div>
+														<div class="control-group"> 
+																													
+															<label class="control-label" for="select01" >Emploie</label>
+																<div class="controls">
+																	<select id="select01" class="span12">
+																		<option value="AK" />menuisier
+																		<option value="HI" />peintre
+													                
+																	</select>
+																</div>
+														</div>
+														<div class="control-group">
+																<label class="control-label" for="select01" >Categorie</label>
+																<div class="controls">
+																	<select id="select01" class="span12">
+																		<option value="AK" />Dirigeant
+																		<option value="HI" />Cadre
+																		<option value="AK" />Apprenti
+																		<option value="HI" />Autre
+																	</select>
+																</div>
+														</div>
+														<div class="control-group"> 
+															<label class="control-label" for="input01" >Qualification</label>
+																<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														<div class="control-group"> 
+															<label class="control-label" for="input01" >Echelon</label>
+																<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														<div class="control-group"> 
+															<label class="control-label" for="input01" >Coefficient</label>
+																<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														<div class="control-group">	
+															<label class="control-label"  for="select01" >Profil</label>
+																<div class="controls">
+																	<select id="select01" class="span12" >
+																		<option value="AK" />
+																		<option value="HI" />
+													                </select>
+																</div>
+														</div>		
+														<div class="control-group">																		
+															<label class="control-label">Date debut</label>
+																<div class="controls">
+																	<div class="input-append date" class="span12" id="datepicker-js" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+																		<input class="datepicker-input" size="16" type="text" value="12-02-2012" placeholder="Select a date" />
+																		<span class="add-on"><i class="cus-calendar-2"></i></span>
+																	</div>
+																</div>
+														</div>
+														<div class="control-group">		
+															<label class="control-label">Date fin</label>
+															<div class="controls">
+																<div class="input-append date"  id="datepicker-js" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+																	<input class="datepicker-input" size="16" type="text" value="12-02-2012" placeholder="Select a date" />
+																	<span class="add-on"><i class="cus-calendar-2"></i></span>
+																</div>
+																
+															</div>
+														</div>
+														<div class="control-group">	
+																																
+															<label class="control-label" >Date d'entree</label>
+															<div class="controls">
+																<div class="input-append date" class="span12 " id="datepicker-js" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+																	<input class="datepicker-input" size="16" type="text" value="12-02-2012" placeholder="Select a date" />
+																	<span class="add-on"><i class="cus-calendar-2" ></i></span>
+																</div>
+																<div class="input-append bootstrap-timepicker-component" >
+														            <input id="timepicker2" type="text" class="timepicker-input" value="Heure embauche" />
+														        </div>
+															</div>
+														</div>	
+														<div class="control-group">	
+															<label class="control-label" >Date sortie</label>
+															<div class="controls">
+																<div class="input-append date"  id="datepicker-js" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+																	<input class="datepicker-input" size="16" type="text" value="12-02-2012" placeholder="Select a date" />
+																	<span class="add-on"><i class="cus-calendar-2"></i></span>
+																</div>
+															</div>
+														</div>	
+														<div class="control-group">			
+															<label class="control-label" for="select01" >Motif</label>
+																<div class="controls">
+																	<select id="select01" class="span12"  >
+																		<option value="AK" />
+																		<option value="HI" />
+													                </select>
+																</div>
+														</div>		
+																
+														<div class="control-group">		
+															<label class="control-label" >Anciennete</label>
+															<div class="controls">
+																<div class="input-append date" id="datepicker-js" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+																	<input class="datepicker-input" size="16" type="text" value="12-02-2012" placeholder="Select a date" />
+																	<span class="add-on"><i class="cus-calendar-2"></i></span>
+																</div>
+																
+															</div>
+														</div>
+														<div class="control-group"> 
+															<label class="control-label" for="input01" >Groupe</label>
+																<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														<div class="control-group"> 
+															<label class="control-label" for="input01" >Secteur</label>
+																<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														
+														
+													
+													</fieldset>
+												</form>
+										</div>
+											<div class="tab-pane fade" id="s4">
+											<form class="form-horizontal themed" />
+													<fieldset>
+														<div class="control-group">
+															<label class="control-label" for="select01">Type de pays</label>
+															<div class="controls">
+																<select id="select01" class="span12">
+													                <option value="M" />Mensuel
+													                <option value="F" />Horaire
+																	<option value="F" />Par point
+																	<option value="F" />Partiel
+																	<option value="F" />Autre
+													                
+														        </select>
+															</div>
+														</div>
+														<div class="control-group" >
+															<label class="control-label" for="input01" >Salaire de base</label>
+																<div class="controls">
+																	<input type="text" class="span12" id="input01" />
+																</div>
+														</div>
+														
+														<div class="control-group" >
+
+															<label class="checkbox inline">
+																	<input type="checkbox" id="optionsCheckbox-2" value="option2" checked="checked" />
+																	Tester la valeur du SMIC 
+																</label>
+														</div>
+														<div class="control-group" >	
+																<label class="checkbox" >
+																		Tester la valeur du salaire minimum conventionel 
+																	<input type="checkbox" id="optionsCheckbox-5" value="option5" />
+																	 
+																</label>
+														
+																	
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="select01">Employeur(s)</label>
+															<div class="controls">
+																<select id="select01" class="span12">
+																	<option value="F" />
+													                <option value="M" />Employeur unique
+													                <option value="F" />Employeur multiple
+																	<option value="F" />Situation non reconnu
+													                
+														        </select>
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label"for="input01">Montant percu</label>
+																<div class="controls">
+																		<input type="text" class="span12"  id="input01" />
+																</div>
+															
+															
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="select01">Emploi(s)</label>
+															<div class="controls">
+																<select id="select01" class="span12">
+																	<option value="AK" />
+													                <option value="M" />Situation non reconnu
+													                <option value="F" />Emplois unique
+																	<option value="F" />Emplois multiples
+													                
+														        </select>
+															</div>
+														</div>	
+														<div class="control-group">	
+															<label class="control-label" for="select01">Nature contrat</label>
+															<div class="controls">
+																<select id="select01" class="span12">
+																	<option value="AK" />
+													                <option value="AK" />contat a duree indeterminee
+													                <option value="HI" />contrat a duree determinee
+													                
+														        </select>
+															</div>
+														</div>
+														<div class="control-group">	
+															
+															<label class="control-label" for="input01">Duree du travail contractuelle</label>
+															<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														<div class="control-group">	
+															<label class="control-label" for="select01">Intitulabbe contrat</label>
+															<div class="controls">
+																<select id="select01" class="span12> 
+																	<option value="AK" />
+																	<option value="AK" />contat a duree indeterminee
+																	<option value="HI" />contrat a duree determinee
+													                
+																</select>
+															</div>
+														</div>
+
+																											
+													</fieldset>
+												</form>
+							
+											</div>
+											
+									 		<!-- <div class="tab-pane fade " id="s5">	
+												<form class="form-horizontal themed" />
+													
+													<article class="span12">
+									new widget 
+														<div class="jarviswidget" id="widget-id-7">
+															 <header>					
+																<h2>Cong&eacute;</h2>                           
+															</header>
+															
+
+									  <div>-->
+									    	<!-- widget edit box 
+									        <div class="jarviswidget-editbox">
+									            <div>
+									                <label>Title:</label>
+									                <input type="text" />
+									            </div>
+									            <div>
+									                <label>Styles:</label>
+									                <span data-widget-setstyle="purple" class="purple-btn"></span>
+									                <span data-widget-setstyle="navyblue" class="navyblue-btn"></span>
+									                <span data-widget-setstyle="green" class="green-btn"></span>
+									                <span data-widget-setstyle="yellow" class="yellow-btn"></span>
+									                <span data-widget-setstyle="orange" class="orange-btn"></span>
+									                <span data-widget-setstyle="pink" class="pink-btn"></span>
+									                <span data-widget-setstyle="red" class="red-btn"></span>
+									                <span data-widget-setstyle="darkgrey" class="darkgrey-btn"></span>
+									                <span data-widget-setstyle="black" class="black-btn"></span>
+									            </div>
+									        </div> -->
+									    
+									    <!-- widget div-->
+									    
+									        <!-- end widget edit box 
+            
+											<div class="inner-spacer"> -->
+									        <!-- content 	
+												<table class="table  table-striped responsive">
+														<thead>
+															<tr>
+																<th></th>
+																<th>dus</th>
+																<th>pris</th>
+																<th>cumuls base CP</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td> N-1 </td>
+																<td>
+																		<div class="controls">
+																			<input type="text" class="span10" id="input01" />
+																		</div>
+																</td>
+																<td>
+																	<div class="controls">
+																		<input type="text" class="span10" id="input01" />
+																	</div>
+																</td>
+																<td>
+																	<div class="controls">
+																		<input type="text" class="span10" id="input01" />
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td>N </td>
+																<td>
+																	<div class="controls">
+																		<input type="text" class="span10" id="input01" />
+																	</div></td>
+																<td>
+																	<div class="controls">
+																		<input type="text" class="span10" id="input01" />
+																	</div>
+																</td>
+																<td>
+																	<div class="controls">
+																		<input type="text" class="span10" id="input01" />
+																	</div>
+																</td>
+															</tr>
+															
+															
+														</tbody>
+												</table>-->
+										       		
+											<!-- end content 	
+											</div>
+										
+									        
+									    </div>
+													<div class="control-group" >
+															<label class="control-label" for="input01">Dus</label>
+															
+															<div class="controls">
+																<input type="text" class="span10" id="input01" />
+															</div>
+															<label class="control-label" for="input01">Pris</label>
+															<div class="controls">
+																<input type="text" class="span10" id="input01" />
+															</div>
+															
+													</div>-->
+									    <!-- end widget div 
+									</div>-->
+									<!-- end widget 
+												</article>
+													
+													
+													
+											</form>
+										</div>		-->
+										
+											
+											<div class="tab-pane" id="s6">
+												<form class="form-horizontal themed" />
+													<fieldset>
+														<div class="control-group">
+															<label class="control-label" for="input01">Convetion collective</label>
+															<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														
+														
+														<div class="control-group">
+															<label class="control-label" for="input01">Code convetion collective </label>
+															<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="select01">Avantages nourriture</label>
+															<div class="controls">
+																<select id="select01" class="span12">
+													                <option value="M" />oui
+													                <option value="F" />non
+													                
+														        </select>
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="select01">Avantages logement</label>
+															<div class="controls">
+																<select id="select01" class="span12 ">
+													                <option value="M" />Oui
+													                <option value="F" />Non
+													                
+														        </select>
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="select01">Avantages vehicule</label>
+															<div class="controls">
+																<select id="select01" class="with-search span12">
+													                <option value="M" />Oui
+													                <option value="F" />Non
+													                
+														        </select>
+															</div>
+														</div>
+														
+														
+														<div class="control-group">
+															<label class="control-label" for="select01">Avantages autre</label>
+															<div class="controls">
+																<select id="select01" class="with-search span12">
+													                <option value="M" />Oui
+													                <option value="F" />Non
+													                
+														        </select>
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="select01">Frais forfait</label>
+															<div class="controls">
+																<select id="select01" class="select-with span12">
+																	<option value="AK" />Oui
+																	<option value="HI" />Non
+																</select>
+															</div>
+														</div>
+														
+														<div class="control-group">
+															<label class="control-label" for="input01">Frais remboursement</label>
+															<div class="controls">
+																<input type="text" class="span12r" id="input01" />
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="input01">Frais avantage salarie</label>
+															<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="select01">Pourboire</label>
+															<div class="controls">
+																<select id="select01" class="span12 with-search">
+																	<option value="AK" />Oui
+																	<option value="HI" />Non
+																</select>
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="select01">Absence montant</label>
+															<div class="controls">
+																<select id="select01" class="span12 with-search">
+																	<option value="AK" />sans
+																	<option value="HI" />A
+																	<option value="AK" />I
+																	<option value="HI" />K
+																	<option value="AK" />P
+																	<option value="HI" />S
+																	<option value="HI" />D
+																</select>
+															</div>
+														</div>
+													
+													</fieldset>
+												</form>
+											</div>
+											
+											<div class="tab-pane" id="s7">
+												<form class="form-horizontal themed" />
+													<fieldset>
+														<div class="control-group">
+															<label class="control-label" for="input01">Code CIPDZ</label>
+															<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														
+														
+														<div class="control-group">
+															<label class="control-label" for="input01">Code etranger</label>
+															<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="input01">Code INSEE emploi</label>
+															<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+														<div class="control-group">
+															<label class="control-label" for="input01">Code INSEE commun</label>
+															<div class="controls">
+																<input type="text" class="span12" id="input01" />
+															</div>
+														</div>
+																											
+													</fieldset>
+												</form>
+											</div>
+											
+											
+											
+											
+											
+										</div>
+										<div class="form-actions">
+															<div style="float: right; margin-bottom: 10px">
+																<label style="display: inline-block; margin-right: 50px"><input type="checkbox" id="autoopen" style="vertical-align: baseline">&nbsp;auto-open next field</label>
+																<button id="enable" class="btn btn-default">enable / disable</button>
+															</div>
+										</div>	<!-- end content -->	
+									        </div>
+									        
+									    </div>
+									    <!-- end widget div -->
+									</div>
+									<!-- end widget -->
+								
+								
+								
+								
+							
+													
+							
+							<!-- end row-fluid -->
+							</div><!-- end content -->	
+					</div>
+					
+					</div>		
+				</div>
+				<!-- end main content -->
+			
+				<!-- aside right on high res -->
+				<aside class="right">
+					
+					<!-- COLONE DROITE -->
+		            <!-- end aside buttons -->
+				</aside>
+				
+				<!-- end aside right -->
+			</div>
+			
+	    </div><!--end fluid-container-->
+		<div class="push"></div>
+	</div>
+	<!-- end .height wrapper -->
+	
+	<!-- footer -->
+	
+	<!-- if you like you can insert your footer here -->
+	
+	<!-- end footer -->
+
+    <!--================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script>window.jQuery.ui || document.write('<script src="js/libs/jquery.ui.min.js"><\/script>')</script>-->
+    
+    <!-- IMPORTANT: Jquery Touch Punch is always placed under Jquery UI 
+    <script src="js/include/jquery.ui.touch-punch.min.js"></script>-->
+
+	<!-- REQUIRED: Datatable components -->
+    <script src="js/include/jquery.accordion.min.js"></script>
+
+	<!-- REQUIRED: Toastr & Jgrowl notifications
+    <script src="js/include/toastr.min.js"></script>
+    <script src="js/include/jquery.jgrowl.min.js"></script>  -->
+    
+    <!-- REQUIRED: Sleek scroll UI  
+    <script src="js/include/slimScroll.min.js"></script>-->
+	
+	<!-- REQUIRED: Datatable components -->
+	<!-- DISABLED <script src="js/include/jquery.dataTables.min.js"></script> -->
+	<!-- DISABLED <script src="js/include/DT_bootstrap.min.js"></script> -->
+
+	
+    <!-- REQUIRED: iButton -->
+    <!-- DISABLED <script src="js/include/jquery.ibutton.min.js"></script> -->
+	
+	<!-- REQUIRED: Justgage animated charts -->
+    <!-- DISABLED <script src="js/include/justgage.min.js"></script> -->
+    <!-- DISABLED <script src="js/include/raphael.2.1.0.min.js"></script> -->
+    
+    <!-- REQUIRED: Animated pie chart 
+    <script src="js/include/jquery.easy-pie-chart.min.js"></script>-->
+    
+    <!-- REQUIRED: Functional Widgets
+    <script src="js/include/jarvis.widget.min.js"></script>
+    <script src="js/include/mobiledevices.min.js"></script> -->
+    <!-- DISABLED (only needed for IE7 <script src="js/include/json2.js"></script> -->
+	
+	<!-- REQUIRED: Full Calendar 
+    <script src="js/include/jquery.fullcalendar.min.js"></script>	-->	
+    
+    <!-- REQUIRED: Flot Chart Engine
+    <script src="js/include/jquery.flot.cust.min.js"></script>			
+    <script src="js/include/jquery.flot.resize.min.js"></script>		
+    <script src="js/include/jquery.flot.tooltip.min.js"></script> -->	
+		
+    <!-- DISABLED <script src="js/include/jquery.flot.orderBar.min.js"></script> -->	
+    <!-- DISABLED <script src="js/include/jquery.flot.fillbetween.min.js"></script> -->	
+    <!-- DISABLED <script src="js/include/jquery.flot.pie.min.js"></script> --> 	 
+    
+    <!-- REQUIRED: Sparkline Charts
+    <script src="js/include/jquery.sparkline.min.js"></script>
+ -->
+	<!-- REQUIRED: Infinite Sliding Menu (used with inbox page) -->
+	<!-- DISABLED  <script src="js/include/jquery.inbox.slashc.sliding-menu.js"></script> -->
+
+	<!-- REQUIRED: Form validation plugin -->
+    <!-- DISABLED <script src="js/include/jquery.validate.min.js"></script> -->
+    
+    <!-- REQUIRED: Progress bar animation 
+    <script src="js/include/bootstrap-progressbar.min.js"></script>-->
+    
+    <!-- REQUIRED: wysihtml5 editor 
+    <script src="js/include/wysihtml5-0.3.0.min.js"></script>
+    <script src="js/include/bootstrap-wysihtml5.min.js"></script>-->
+
+	<!-- REQUIRED: Masked Input -->
+    <!-- DISABLED  <script src="js/include/jquery.maskedinput.min.js"></script> -->
+    
+    <!-- REQUIRED: Bootstrap Date Picker 
+    <script src="js/include/bootstrap-datepicker.min.js"></script>-->
+
+    <!-- REQUIRED: Bootstrap Wizard -->
+    <!-- DISABLED  <script src="js/include/bootstrap.wizard.min.js"></script> -->
+    
+	<!-- REQUIRED: Bootstrap Color Picker -->
+    <!-- DISABLED  <script src="js/include/bootstrap-colorpicker.min.js"></script> -->
+
+    
+	<!-- REQUIRED: Bootstrap Time Picker -->
+    <!-- DISABLED  <script src="js/include/bootstrap-timepicker.min.js"></script> -->
+    
+    <!-- REQUIRED: Bootstrap Prompt -->
+    <!-- DISABLED  <script src="js/include/bootbox.min.js"></script> -->
+    
+    <!-- REQUIRED: Bootstrap engine 
+    <script src="js/include/bootstrap.min.js"></script>-->
+    
+    <!-- DO NOT REMOVE: Theme Config file-->
+    <script src="js/js-xeditable-bootstrap/configx-editable.js"></script> 
+    
+    <!-- d3 library placed at the bottom for better performance -->
+    <!-- DISABLED  <script src="js/include/d3.v3.min.js"></script> -->
+    <!-- DISABLED  <script src="js/include/adv_charts/d3-chart-1.js"></script> -->
+    <!-- DISABLED  <script src="js/include/adv_charts/d3-chart-2.js"></script> -->
+
+    <!-- Google Geo Chart -->
+    <!-- DISABLED <script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script> -->
+    <!-- DISABLED <script type='text/javascript' src='https://www.google.com/jsapi'></script>-->
+    <!-- DISABLED <script src="js/include/adv_charts/geochart.js"></script> -->
+    
+    <!-- end scripts -->
+    
+    <script src="js/js-xeditable-bootstrap/demo-mock.js"></script> 
+        <script src="js/js-xeditable-bootstrap/demo.js"></script>         
+    
+    
+  </body>
+</html>
+
