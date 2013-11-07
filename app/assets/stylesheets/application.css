@@ -10,5 +10,21 @@
  *
  *= require_self
  *= require_tree .
+ *= require address 
+ *= require bootstrap 
+ *= require bootstrap.min 
+ *= require bootstrap-col 
  *= require bootstrap-editable 
+ *= require bootstrap-responsive 
+ *= require bootstrap-responsive.min 
+ *= require bootstrap-wysihtml5-0.0.2
+ *= require datepicker
+ *= require datetimepicker 
+  
+ *= require select2 
+ *= require select2-bootstrap
+ *= require style
+ *= require unseen 
+ *= require x-editable-perso
+ *= require responsive-tabs
 */

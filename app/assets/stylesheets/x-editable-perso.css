@@ -1,0 +1,43 @@
+.popover-title {
+	color:red;
+	
+	}
+	
+	.popover-content {
+		
+		background: url("../img/backgrounds/current.png") repeat scroll 0% 0% transparent;
+		
+		
+		}
+		.arrow{
+			
+			background-color:#5f8dd3;
+			
+			
+			}
+			
+			.popover{
+			
+			background: url("../img/backgrounds/current.png") repeat scroll 0% 0% transparent;
+			
+			
+			}
+			.popover-content .control-group{
+				
+				
+				background: url("../img/backgrounds/current.png") repeat scroll 0% 0% transparent;
+		
+				}
+
+.tab-content {
+    overflow: visible;
+}
+
+
+
+
+
+
+
+
+
